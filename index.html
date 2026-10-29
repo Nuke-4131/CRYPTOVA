@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRYPTOVA — Secure Data Protection & Integrity Platform</title>
+  <meta name="description" content="CRYPTOVA is an enterprise-grade platform for secure file encryption, package authentication, and data integrity verification. Protect sensitive information without compromising control.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+
+  <style>
+    /* Landing-only overrides */
+    body { background: var(--color-bg); }
+
+    .landing-hero-badge {
+      width: 6px; height: 6px; border-radius: 50%;
+      background: var(--color-success); display: inline-block;
+    }
+
+    .features-grid .feature-card {
+      transition: box-shadow var(--transition-slow), transform var(--transition-slow);
+    }
+    .features-grid .feature-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    /* Trust bar */
+    .trust-bar {
+      background: var(--color-surface);
+      border-top: var(--border-width) solid var(--color-border);
+      border-bottom: var(--border-width) solid var(--color-border);
+      padding: var(--space-8) var(--space-8);
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .trust-bar-label {
+      font-size: var(--text-xs);
+      font-weight: var(--weight-semibold);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-tertiary);
+      margin-bottom: var(--space-5);
+    }
+    .trust-indicators {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: var(--space-8);
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      font-size: var(--text-sm);
+      font-weight: var(--weight-medium);
+      color: var(--color-text-secondary);
+    }
+    .trust-item svg { color: var(--color-accent); }
+
+    /* How-it-works */
+    .how-section {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 0 var(--space-8) 80px;
+    }
+    .how-title {
+      text-align: center;
+      font-size: var(--text-2xl);
+      font-weight: var(--weight-bold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-2);
+      letter-spacing: -0.01em;
+    }
+    .how-desc {
+      text-align: center;
+      color: var(--color-text-secondary);
+      margin-bottom: var(--space-10);
+      font-size: var(--text-lg);
+    }
+    .how-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+    .how-step {
+      display: flex;
+      gap: var(--space-6);
+      padding: var(--space-6) 0;
+      border-bottom: var(--border-width) solid var(--color-border);
+    }
+    .how-step:last-child { border-bottom: none; }
+    .how-step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--color-accent-light);
+      border: var(--border-width) solid #BDD0E8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--text-sm);
+      font-weight: var(--weight-bold);
+      color: var(--color-accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .how-step-body h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--weight-semibold);
+      color: var(--color-text-primary);
+      margin-bottom: var(--space-1);
+    }
+    .how-step-body p {
+      color: var(--color-text-secondary);
+      font-size: var(--text-md);
+      line-height: var(--leading-loose);
+    }
+  </style>
+</head>
+<body>
+<div class="landing-page">
+
+  <!-- Nav -->
+  <nav class="landing-nav">
+    <div class="wordmark">CRYPTOVA</div>
+    <div class="flex items-center gap-4">
+      <span class="badge badge-success" style="font-size:var(--text-xs);">
+        <span style="width:6px;height:6px;background:var(--color-success);border-radius:50%;display:inline-block;"></span>
+        All systems operational
+      </span>
+      <a href="dashboard.html" class="btn btn-primary btn-sm">Open Platform</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <div class="landing-hero">
+    <div class="landing-eyebrow">
+      <span class="landing-hero-badge"></span>
+      Enterprise Security Platform
+    </div>
+    <h1 class="landing-h1">Protect sensitive information<br>without compromising control.</h1>
+    <p class="landing-subtitle">CRYPTOVA gives security teams a structured, auditable environment for file encryption, cryptographic verification, and secure vault management.</p>
+    <div class="landing-cta">
+      <a href="dashboard.html" class="btn btn-primary btn-lg" id="hero-cta-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Open Dashboard
+      </a>
+      <a href="#how-it-works" class="btn btn-secondary btn-lg" id="hero-cta-secondary">
+        Learn more
+        <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 9l-7 7-7-7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Trust Bar -->
+  <div class="trust-bar">
+    <p class="trust-bar-label">Built for enterprise compliance</p>
+    <div class="trust-indicators">
+      <div class="trust-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        AES-256 Encryption
+      </div>
+      <div class="trust-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        HMAC-SHA-256 Integrity
+      </div>
+      <div class="trust-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+        Tamper-Evident Packages
+      </div>
+      <div class="trust-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        Full Audit Trail
+      </div>
+      <div class="trust-item">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        Client-Side Processing
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Grid -->
+  <div class="landing-features">
+    <p class="features-label">Core capabilities</p>
+    <div class="features-grid">
+
+      <!-- Encrypt -->
+      <div class="feature-card" id="feature-encrypt">
+        <div class="feature-icon">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h2 class="feature-title">Encrypt</h2>
+        <p class="feature-desc">Protect files with AES-256 encryption. Define sensitivity classification, select key derivation parameters, and generate authenticated packages in seconds.</p>
+        <div style="margin-top:var(--space-5);">
+          <a href="dashboard.html#encrypt" class="btn btn-secondary btn-sm">Open Encrypt →</a>
+        </div>
+      </div>
+
+      <!-- Verify -->
+      <div class="feature-card" id="feature-verify">
+        <div class="feature-icon" style="background:var(--color-success-bg);color:var(--color-success);">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <h2 class="feature-title">Verify</h2>
+        <p class="feature-desc">Authenticate encrypted packages through a structured verification pipeline — format validation, cryptographic authentication, and integrity checking — before decryption is permitted.</p>
+        <div style="margin-top:var(--space-5);">
+          <a href="dashboard.html#decrypt" class="btn btn-secondary btn-sm">Open Verify →</a>
+        </div>
+      </div>
+
+      <!-- Vault -->
+      <div class="feature-card" id="feature-vault">
+        <div class="feature-icon" style="background:var(--color-warning-bg);color:var(--color-warning);">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="14" rx="2"/><path d="M8 6V4a4 4 0 0 1 8 0v2"/><circle cx="12" cy="13" r="2"/></svg>
+        </div>
+        <h2 class="feature-title">Vault</h2>
+        <p class="feature-desc">Manage your encrypted file inventory with full metadata visibility. Search, filter, and download protected packages, and track the integrity status of every stored file.</p>
+        <div style="margin-top:var(--space-5);">
+          <a href="dashboard.html#vault" class="btn btn-secondary btn-sm">Open Vault →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <div class="how-section" id="how-it-works">
+    <h2 class="how-title">How CRYPTOVA works</h2>
+    <p class="how-desc">A structured workflow designed for security and auditability</p>
+    <div class="how-steps">
+      <div class="how-step">
+        <div class="how-step-num">1</div>
+        <div class="how-step-body">
+          <h3>Upload & classify</h3>
+          <p>Select a file and assign a sensitivity classification (Public, Internal, Confidential, Restricted). CRYPTOVA records file metadata before any operation begins.</p>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">2</div>
+        <div class="how-step-body">
+          <h3>Configure protection</h3>
+          <p>Choose an encryption algorithm and key derivation settings. CRYPTOVA generates an authenticated package including an HMAC integrity signature bound to the file content and metadata.</p>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">3</div>
+        <div class="how-step-body">
+          <h3>Authenticate before decrypt</h3>
+          <p>Every decryption request passes through a five-stage verification pipeline. Packages that fail integrity checks are blocked immediately — the decrypted content is never accessed.</p>
+        </div>
+      </div>
+      <div class="how-step">
+        <div class="how-step-num">4</div>
+        <div class="how-step-body">
+          <h3>Auditable activity log</h3>
+          <p>Every encryption, decryption, and verification event is recorded with a timestamp, actor, target file, and outcome. Full audit trail for compliance reporting.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="landing-footer">
+    <div class="wordmark" style="font-size:var(--text-md);">CRYPTOVA</div>
+    <span>Secure Data Protection & Integrity Platform</span>
+    <span>© 2026 CRYPTOVA. All rights reserved.</span>
+  </footer>
+
+</div>
+</body>
+</html>

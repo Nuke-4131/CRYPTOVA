@@ -1,0 +1,106 @@
+/* ============================================================
+   CRYPTOVA — Design Tokens
+   Professional Enterprise Security Platform
+   ============================================================ */
+
+:root {
+  /* ── Color System ─────────────────────────────────────── */
+  --color-bg:          #F6F7F9;
+  --color-surface:     #FFFFFF;
+  --color-surface-2:   #F0F2F5;
+  --color-surface-3:   #E8EBF0;
+
+  --color-text-primary:   #172033;
+  --color-text-secondary: #667085;
+  --color-text-tertiary:  #98A2B3;
+  --color-text-disabled:  #B8C0CC;
+  --color-text-inverse:   #FFFFFF;
+
+  --color-border:       #E4E7EC;
+  --color-border-hover: #C5CAD5;
+  --color-border-focus: #243B64;
+
+  --color-accent:         #243B64;
+  --color-accent-light:   #EAF0F9;
+  --color-accent-hover:   #1A2D4E;
+  --color-accent-subtle:  #3D5A8A;
+
+  --color-success:        #287A55;
+  --color-success-bg:     #EDFAF3;
+  --color-success-border: #A8D5BE;
+
+  --color-warning:        #A66A16;
+  --color-warning-bg:     #FEF6EC;
+  --color-warning-border: #F5C98A;
+
+  --color-danger:         #B54747;
+  --color-danger-bg:      #FEF1F1;
+  --color-danger-border:  #F0AAAA;
+
+  --color-info:           #2563A8;
+  --color-info-bg:        #EAF2FB;
+  --color-info-border:    #9ECBF0;
+
+  /* ── Sidebar ──────────────────────────────────────────── */
+  --sidebar-bg:          #1A2A45;
+  --sidebar-border:      #243B64;
+  --sidebar-text:        #A8B8D0;
+  --sidebar-text-active: #FFFFFF;
+  --sidebar-item-active: #243B64;
+  --sidebar-item-hover:  rgba(255,255,255,0.06);
+  --sidebar-width:       220px;
+
+  /* ── Typography ───────────────────────────────────────── */
+  --font-sans: 'Inter', 'Geist', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  --text-xs:   11px;
+  --text-sm:   12px;
+  --text-base: 13px;
+  --text-md:   14px;
+  --text-lg:   16px;
+  --text-xl:   18px;
+  --text-2xl:  22px;
+  --text-3xl:  28px;
+  --text-4xl:  36px;
+
+  --leading-tight:  1.25;
+  --leading-normal: 1.5;
+  --leading-loose:  1.75;
+
+  --weight-regular:  400;
+  --weight-medium:   500;
+  --weight-semibold: 600;
+  --weight-bold:     700;
+
+  /* ── Spacing (4px base) ────────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+
+  /* ── Borders & Radius ─────────────────────────────────── */
+  --border-width: 1px;
+  --radius-sm:  4px;
+  --radius-md:  6px;
+  --radius-lg:  8px;
+  --radius-xl:  10px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ──────────────────────────────────────────── */
+  --shadow-xs:  0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  --shadow-sm:  0 1px 3px 0 rgba(16, 24, 40, 0.08), 0 1px 2px -1px rgba(16, 24, 40, 0.04);
+  --shadow-md:  0 4px 8px -2px rgba(16, 24, 40, 0.08), 0 2px 4px -2px rgba(16, 24, 40, 0.04);
+
+  /* ── Transitions ──────────────────────────────────────── */
+  --transition-fast:   100ms ease;
+  --transition-base:   150ms ease;
+  --transition-slow:   250ms ease;
+  --transition-page:   180ms ease;
+}

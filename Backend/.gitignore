@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+cryptova.db
+storage/encrypted_files/*
+!storage/encrypted_files/.gitkeep
+.pytest_cache/
